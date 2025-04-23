@@ -1,5 +1,5 @@
 # py-MCC-USB-TC
-Simple python code that uses the `mccdaq` lib to gather all temperature data from a (MCC USB-TC thermocouple device)[https://digilent.com/shop/mcc-usb-temp-and-tc-series-temperature-and-voltage-measurement-usb-daq-devices/?srsltid=AfmBOoolRMjAcx3jR9GDfbEzpXCI7UAlbfnUXj0Jnu_xijO5TsiLRdl2] and save to file. Packagable to standalone executable on Windows.
+Simple python code that uses the `mccdaq` lib to gather all temperature data from a [MCC USB-TC thermocouple device](https://digilent.com/shop/mcc-usb-temp-and-tc-series-temperature-and-voltage-measurement-usb-daq-devices/?srsltid=AfmBOoolRMjAcx3jR9GDfbEzpXCI7UAlbfnUXj0Jnu_xijO5TsiLRdl2) and save to file. Packagable to standalone executable on Windows.
 
 ## Linux 
 
@@ -7,7 +7,7 @@ For running on Linux, the `mcculw` library may need to be exchanged for the `uld
 
 ## Package to standalone .exe for Windows
 
-Easily done with (PyInstaller)[https://pyinstaller.org].
+Easily done with [PyInstaller](https://pyinstaller.org).
 
 ```
 pip install -U pyinstaller
@@ -22,4 +22,4 @@ The `.bat` file is just for ease of running the script and also needs an updated
 
 
 
-Made for use in the electrochemistry lab at (NTNU)[https://www.ntnu.edu/ima/research/electrochemistry] in 2024 for monitoring of 18650 battery cells.
+Made for use in the electrochemistry lab at [NTNU](https://www.ntnu.edu/ima/research/electrochemistry) in 2024 for monitoring of 18650 battery cells.
