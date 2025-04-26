@@ -1,9 +1,17 @@
 # py-MCC-USB-TC
 Simple python code that uses the `mccdaq` lib to gather all temperature data from a [MCC USB-TC thermocouple device](https://digilent.com/shop/mcc-usb-temp-and-tc-series-temperature-and-voltage-measurement-usb-daq-devices/?srsltid=AfmBOoolRMjAcx3jR9GDfbEzpXCI7UAlbfnUXj0Jnu_xijO5TsiLRdl2) and save to file. Packagable to standalone executable on Windows.
 
+I made an article where this project was used, check it out: [Drying Filament](https://raniseth.com/blog/2025-04-26-Drying-Filament.html).
+
 ## Linux 
 
-For running on Linux, the `mcculw` library may need to be exchanged for the `uldaq` library; which I have not tested. I'm happy to take PRs.
+For running on Linux, the `mcculw` library is exchanged for the `uldaq` library. Follow installation instructions on the [uldaq github](https://github.com/mccdaq/uldaq) before building or running.
+
+Your user needs access to the USB device. The easiest way is to add your user to the dialout group.
+
+```
+sudo usermod -a -G dialout $USER
+```
 
 ## Package to standalone .exe for Windows
 

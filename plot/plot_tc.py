@@ -5,8 +5,10 @@ import matplotlib.dates as mdates
 import sys
 import os
 
-DATADIR = "C:/Users/Maccor/Documents/USB-TC/"
-TC_CORR_CONSTS = [2.666, 2.598, 2.409, 2.138, 3.268, 3.271, 3.077, 3.242]
+# DATADIR = "C:/Users/Maccor/Documents/USB-TC/"
+DATADIR = "~/Documents/git/py-MCC-USB-TC/"
+# TC_CORR_CONSTS = [2.666, 2.598, 2.409, 2.138, 3.268, 3.271, 3.077, 3.242]
+TC_CORR_CONSTS = [0, 0, 0, 0, 0, 0, 0, 0]
 
 
 def get_tc_data(thermocouples: list, date_range: tuple):
@@ -73,6 +75,7 @@ def plot(df, temp_unit="C", dateformat='%Y-%m-%d %H:%M:%S'):
     plt.title(f'channels {[col for col in df.columns[1:]]}')
     plt.xlabel("Time")
     plt.ylabel(f"Temperature, T [�{temp_unit}]")
+    plt.ylim((0, 100))
     plt.legend()
     # plt.grid(True)
     plt.show()
